@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bağlantısız Sağlık Kokpiti</title>
+<style>{{CSS}}</style></head>
+<body>
+<div class="shell">
+ <aside class="side">
+  <div class="brand"><span class="mk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0032A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 3 10 2.5-7 1.5 2H21"/></svg></span><span class="tx">Bağlantısız<br>Sağlık Kokpiti<small>Çevrimdışı astronot sağlık paneli</small></span></div>
+  <nav class="nav">
+   <button class="on" id="navGenel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Genel bakış</button>
+   <button id="navKan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>Kan değerleri</button>
+   <button id="navRapor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>Astronot sayfası</button>
+  </nav>
+  <div class="demo"><b>Demo</b><button id="dbas">Başlat</button><button id="dson">Sonraki</button><button id="dhep">Tüm veri</button><button id="dsil">Sıfırla</button><div class="msg" id="dMsg"></div></div>
+  <div class="disc"><div class="sa">NASA Space Apps Challenge 2026<small>Konya · Steppe to Stars · NASA açık verisiyle geliştirildi</small></div><div class="insignia hidden" id="insignia"></div><b style="margin-top:10px">Karar destek aracıdır, teşhis koymaz.</b><span class="ibrow">Kan: gerçek NASA verisi · Şikayetler simüle <button type="button" class="ib light" id="ibKaynak" aria-label="Veri kaynakları">i</button></span></div>
+ </aside>
+
+ <section class="main">
+  <div class="top">
+   <div><h1>Genel bakış</h1><div class="sub" id="topSub"></div></div>
+   <div class="sp"></div>
+   <div class="crew" id="crew" role="tablist" aria-label="Astronot"></div>
+   <label class="clock"><span class="lb">Görev saati (UTC)</span> <input id="gs" type="datetime-local" step="60"><span class="canli" id="canliT" title="Gerçek saat, her dakika güncellenir">canlı</span><button id="simdiB" title="Gerçek saate dön">Şimdi</button><button id="ileri" title="Görev saatini 6 saat ileri al (canlı saatten çıkar)">+6 sa</button></label>
+  </div>
+
+  <div class="grid">
+   <div class="col">
+    <div class="card">
+     <div class="who"><div class="nm" id="nm"></div><div class="ds" id="ds"></div></div>
+     <div class="chips" id="chips"></div>
+    </div>
+    <div class="card lab">
+     <h3><span><span class="ibrow">Kan göstergesi <span id="ibKan"></span></span><small class="h3s" id="kanZ"></small></span><button class="lnk" id="tumKan">Tüm değerler ›</button></h3>
+     <div class="msel"><span class="dot" id="mDot"></span><select id="mSel" aria-label="Grafikte gösterilen kan değeri"></select></div>
+     <div class="chart" id="chart"></div>
+     <div class="ent" id="ent"></div>
+    </div>
+   </div>
+
+   <div class="body">
+    <div class="hd"><b>Ağrıyan bölgeye dokunun</b><div class="yon" role="tablist" aria-label="Görünüm"><button id="yOn" class="on" role="tab">Ön</button><button id="yArka" role="tab">Arka</button></div></div>
+    <div id="v1" class="fig" role="img" aria-label="Ön ve arka insan figürü, tıklanabilir bölgeler"></div>
+    <div class="tip hidden" id="tip"></div>
+    <div class="selbar" id="selTxt"></div>
+   </div>
+
+   <div class="col right">
+    <div id="crewAlert"></div>
+    <div class="card sik" id="sikKart">
+     <h3>Şikayet</h3>
+     <div class="region" id="selChip">Önce figürden bir bölge seçin.</div>
+     <div class="lbl">Şiddet <span id="svTxt">5 / 10</span></div>
+     <div class="sev" id="sev" role="radiogroup" aria-label="Şiddet 1-10"></div><input id="sv" type="hidden" value="5">
+     <div class="lbl">Belirtiler</div>
+     <div class="pills" id="chk"></div>
+     <div class="row2"><input id="ft" placeholder="Not (isteğe bağlı)"><button class="pri" id="kaydet">Kaydet</button></div>
+     <div class="msg" id="kMsg"></div>
+    </div>
+    <div class="card res" id="res"></div>
+   </div>
+  </div>
+
+  <div class="tl" id="tl" aria-label="Görev zaman çizelgesi"></div>
+ </section>
+</div>
+
+<div class="scrim hidden" id="scrim"></div>
+<aside class="drawer" id="drw" aria-hidden="true"><div class="dh"><h2 id="drwH"></h2><button id="drwX" aria-label="Kapat">Kapat</button></div><div class="db" id="drwB"></div></aside>
+
+<script>{{JS}}</script></body></html>

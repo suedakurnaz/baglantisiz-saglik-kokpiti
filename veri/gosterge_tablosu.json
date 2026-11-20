@@ -1,0 +1,870 @@
+{
+ "hemoglobin": {
+  "ad": "Hemoglobin",
+  "br": "g/dL",
+  "ref": [
+   13.2,
+   17.1
+  ],
+  "refK": [
+   11.7,
+   15.5
+  ],
+  "dusuk": {
+   "durum": "Anemi (uzayda alyuvar yıkımı dahil)",
+   "oneri": [
+    "Dinlenin, ağır eforu azaltın",
+    "Ayağa yavaş kalkın",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Çarpıntı, bayılma veya nefes darlığı",
+    "Şikayet 48 saat sürerse"
+   ],
+   "sem": [
+    "halsizlik",
+    "bas",
+    "carp",
+    "nefes"
+   ],
+   "not": "Demir/takviye önerilmez"
+  },
+  "yuksek": {
+   "durum": "Sıvı eksikliği (kan yoğunlaşması)",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "Ayağa yavaş kalkın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Bayılma",
+    "Sıvı alımına rağmen düzelmezse"
+   ],
+   "sem": [
+    "susama",
+    "bas",
+    "halsizlik"
+   ],
+   "not": "NASA Gravity Fields ve kalp-damar sayfaları"
+  }
+ },
+ "hematocrit": {
+  "ad": "Hematokrit",
+  "br": "%",
+  "ref": [
+   38.5,
+   50
+  ],
+  "refK": [
+   35,
+   45
+  ],
+  "dusuk": {
+   "durum": "Anemi veya sıvı fazlalığı (kan seyrelmesi)",
+   "oneri": [
+    "Dinlenin, ağır eforu azaltın",
+    "Ayağa yavaş kalkın",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Çarpıntı, bayılma veya nefes darlığı",
+    "Şikayet 48 saat sürerse"
+   ],
+   "sem": [
+    "halsizlik",
+    "bas",
+    "carp",
+    "nefes"
+   ],
+   "not": "Demir/takviye önerilmez"
+  },
+  "yuksek": {
+   "durum": "Sıvı eksikliği (kan yoğunlaşması)",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "Ayağa yavaş kalkın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Bayılma",
+    "Sıvı alımına rağmen düzelmezse"
+   ],
+   "sem": [
+    "susama",
+    "bas",
+    "halsizlik"
+   ],
+   "not": "NASA Gravity Fields ve kalp-damar sayfaları"
+  }
+ },
+ "red_blood_cell_count": {
+  "ad": "Alyuvar sayısı",
+  "br": "milyon/µL",
+  "ref": [
+   4.2,
+   5.8
+  ],
+  "refK": [
+   3.8,
+   5.1
+  ],
+  "dusuk": {
+   "durum": "Anemi, alyuvar yıkımı artışı",
+   "oneri": [
+    "Dinlenin, ağır eforu azaltın",
+    "Ayağa yavaş kalkın",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Çarpıntı, bayılma veya nefes darlığı",
+    "Şikayet 48 saat sürerse"
+   ],
+   "sem": [
+    "halsizlik",
+    "bas",
+    "carp",
+    "nefes"
+   ],
+   "not": "Demir/takviye önerilmez"
+  },
+  "yuksek": {
+   "durum": "Sıvı eksikliği (kan yoğunlaşması)",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "Ayağa yavaş kalkın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Bayılma",
+    "Sıvı alımına rağmen düzelmezse"
+   ],
+   "sem": [
+    "susama",
+    "bas",
+    "halsizlik"
+   ],
+   "not": "NASA Gravity Fields ve kalp-damar sayfaları"
+  }
+ },
+ "white_blood_cell_count": {
+  "ad": "Akyuvar (WBC)",
+  "br": "bin/µL",
+  "ref": [
+   3.8,
+   10.8
+  ],
+  "dusuk": {
+   "durum": "Bağışıklık baskılanması, viral enfeksiyon",
+   "oneri": [
+    "Dinlenin",
+    "Ortak alan hijyenine dikkat edin",
+    "Ateşi kaydedin"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Ateş",
+    "Boğaz ağrısı veya öksürük artarsa"
+   ],
+   "sem": [
+    "ates",
+    "halsizlik",
+    "oksuruk"
+   ]
+  },
+  "yuksek": {
+   "durum": "Enfeksiyon, iltihap, stres",
+   "oneri": [
+    "Dinlenin, sıvı alımını artırın",
+    "Ateşi 6 saatte bir ölçüp kaydedin",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Ateş yükselirse",
+    "Nefes darlığı",
+    "Şikayet 48 saat sürerse"
+   ],
+   "sem": [
+    "ates",
+    "halsizlik",
+    "oksuruk"
+   ]
+  }
+ },
+ "platelet_count": {
+  "ad": "Trombosit",
+  "br": "bin/µL",
+  "ref": [
+   140,
+   400
+  ],
+  "dusuk": {
+   "durum": "Kanama/morarma eğilimi",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Burun veya diş eti kanaması",
+    "Nedensiz morarma",
+    "Koyu renkli dışkı"
+   ],
+   "sem": [
+    "morarma"
+   ]
+  },
+  "yuksek": {
+   "durum": "Reaktif artış (iltihap sonrası)",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Şikayet sürerse",
+    "Bacakta şişlik veya ağrı"
+   ],
+   "sem": [
+    "ates"
+   ]
+  }
+ },
+ "crp": {
+  "ad": "CRP (iltihap belirteci)",
+  "br": "mg/L",
+  "ref": [
+   null,
+   null
+  ],
+  "dusuk": null,
+  "yuksek": {
+   "durum": "İltihap / enfeksiyon",
+   "oneri": [
+    "Dinlenin, sıvı alımını artırın",
+    "Ateşi 6 saatte bir ölçüp kaydedin",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Ateş yükselirse",
+    "Nefes darlığı",
+    "Şikayet 48 saat sürerse"
+   ],
+   "sem": [
+    "ates",
+    "halsizlik",
+    "oksuruk"
+   ],
+   "not": "Aralık dosyada yok: CRP_ESIK ile takım varsayımı belirleyin"
+  }
+ },
+ "glucose": {
+  "ad": "Glukoz",
+  "br": "mg/dL",
+  "ref": [
+   65,
+   99
+  ],
+  "dusuk": {
+   "durum": "Düşük kan şekeri (yetersiz alım, uzun açlık, yoğun efor)",
+   "oneri": [
+    "Öğün düzeninizi gözden geçirin",
+    "Ölçümü yineleyin"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Bilinç bulanıklığı veya bayılma",
+    "Tekrarlayan düşük ölçüm"
+   ],
+   "sem": [
+    "bas",
+    "halsizlik",
+    "terleme",
+    "bulanti"
+   ],
+   "not": "Dönüşten 45 gün sonraki 36-44 mg/dL değerleri açıklanmamış veridir, yorumlamayın"
+  },
+  "yuksek": {
+   "durum": "Yüksek kan şekeri (yemek sonrası/stres de olabilir)",
+   "oneri": [
+    "Son öğün zamanını not edin",
+    "Ölçümü yineleyin"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Susama ve sık idrar sürerse",
+    "Tekrarlayan yüksek ölçüm"
+   ],
+   "sem": [
+    "susama",
+    "idrar",
+    "halsizlik"
+   ]
+  }
+ },
+ "sodium": {
+  "ad": "Sodyum",
+  "br": "mmol/L",
+  "ref": [
+   135,
+   146
+  ],
+  "dusuk": {
+   "durum": "Sıvı-elektrolit dengesizliği",
+   "oneri": [
+    "Sıvı alımını dengeli tutun (ne aşırı az, ne aşırı çok)",
+    "Dinlenin",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Bayılma",
+    "Kafa karışıklığı",
+    "Şiddetli baş ağrısı"
+   ],
+   "sem": [
+    "halsizlik",
+    "kramp",
+    "bulanti",
+    "basagri"
+   ]
+  },
+  "yuksek": {
+   "durum": "Sıvı eksikliği",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "Sodyumu azaltın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Şişlik",
+    "Nefes darlığı",
+    "Bayılma"
+   ],
+   "sem": [
+    "susama",
+    "halsizlik",
+    "bas"
+   ],
+   "not": "NASA beslenme ve Gravity Fields sayfaları"
+  }
+ },
+ "potassium": {
+  "ad": "Potasyum",
+  "br": "mmol/L",
+  "ref": [
+   3.5,
+   5.3
+  ],
+  "dusuk": {
+   "durum": "Kas güçsüzlüğü, kramp, ritim etkisi",
+   "oneri": [
+    "Dinlenin, ağır eforu azaltın",
+    "Çarpıntı olursa kaydedin",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Çarpıntı",
+    "Güçsüzlük artarsa",
+    "Bayılma"
+   ],
+   "sem": [
+    "kramp",
+    "halsizlik",
+    "carp"
+   ]
+  },
+  "yuksek": {
+   "durum": "Ritim bozukluğu riski, böbrek ilişkisi",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Uçuş hekimine HEMEN bildirin",
+    "Çarpıntı, bayılma veya göğüs ağrısı varsa acil"
+   ],
+   "sem": [
+    "carp",
+    "halsizlik",
+    "kramp",
+    "bayilma"
+   ]
+  }
+ },
+ "chloride": {
+  "ad": "Klorür",
+  "br": "mmol/L",
+  "ref": [
+   98,
+   110
+  ],
+  "dusuk": {
+   "durum": "Kusma/sıvı kaybıyla asit-baz kayması",
+   "oneri": [
+    "Sıvı alımını dengeli tutun (ne aşırı az, ne aşırı çok)",
+    "Dinlenin",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Bayılma",
+    "Kafa karışıklığı",
+    "Şiddetli baş ağrısı"
+   ],
+   "sem": [
+    "halsizlik",
+    "kramp",
+    "bulanti",
+    "basagri"
+   ]
+  },
+  "yuksek": {
+   "durum": "Sıvı eksikliği, asit-baz kayması",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "Sodyumu azaltın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Şişlik",
+    "Nefes darlığı",
+    "Bayılma"
+   ],
+   "sem": [
+    "susama",
+    "halsizlik",
+    "bas"
+   ],
+   "not": "NASA beslenme ve Gravity Fields sayfaları"
+  }
+ },
+ "carbon_dioxide": {
+  "ad": "Bikarbonat (CO2)",
+  "br": "mmol/L",
+  "ref": [
+   20,
+   32
+  ],
+  "dusuk": {
+   "durum": "Asidik eğilim (böbrek, ishal)",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Hızlı veya zor nefes",
+    "Bilinç değişikliği"
+   ],
+   "sem": [
+    "halsizlik",
+    "nefes",
+    "bulanti"
+   ],
+   "not": "Kan bikarbonatıdır, kabin CO2'si değil"
+  },
+  "yuksek": {
+   "durum": "Alkali eğilim (kusma, sıvı kaybı)",
+   "oneri": [
+    "Sıvı alımını dengeli tutun",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Sürekli kusma",
+    "Kramp artarsa"
+   ],
+   "sem": [
+    "bulanti",
+    "kramp",
+    "halsizlik"
+   ],
+   "not": "Kan bikarbonatıdır, kabin CO2'si değil"
+  }
+ },
+ "calcium": {
+  "ad": "Kalsiyum",
+  "br": "mg/dL",
+  "ref": [
+   8.6,
+   10.3
+  ],
+  "dusuk": {
+   "durum": "Kas krampı/uyuşma yatkınlığı",
+   "oneri": [
+    "48 saat sonra yeniden ölçün",
+    "Hafif germe yapın, programlı egzersize devam edin"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Şiddetli kramp veya güçsüzlük",
+    "Çarpıntı"
+   ],
+   "sem": [
+    "kramp",
+    "halsizlik"
+   ],
+   "not": "Albümin düşükse görünür düşüklük olabilir"
+  },
+  "yuksek": {
+   "durum": "Kemikten kalsiyum çıkışı, böbrek taşı riski",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "Direnç egzersizini programa uygun sürdürün"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Yan ağrısı",
+    "Kanlı idrar",
+    "Bulantı ve kusma artarsa"
+   ],
+   "sem": [
+    "yan",
+    "bulanti",
+    "halsizlik",
+    "susama"
+   ],
+   "not": "NASA kemik ve Gravity Fields sayfaları"
+  }
+ },
+ "urea_nitrogen_bun": {
+  "ad": "Üre azotu (BUN)",
+  "br": "mg/dL",
+  "ref": [
+   7,
+   25
+  ],
+  "dusuk": {
+   "durum": "Düşük protein alımı",
+   "oneri": [],
+   "kat": null,
+   "hekime": [],
+   "sem": []
+  },
+  "yuksek": {
+   "durum": "Sıvı eksikliği, böbrek yükü",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "İdrar azalması",
+    "Yan ağrısı",
+    "Bayılma"
+   ],
+   "sem": [
+    "susama",
+    "halsizlik",
+    "idrar"
+   ],
+   "not": "Sıvı önerisi K1, yeniden ölçüm K2"
+  }
+ },
+ "creatinine": {
+  "ad": "Kreatinin",
+  "br": "mg/dL",
+  "ref": [
+   0.6,
+   1.35
+  ],
+  "dusuk": {
+   "durum": "Düşük kas kütlesi",
+   "oneri": [
+    "Programlı direnç egzersizine devam edin"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Güçsüzlük artarsa"
+   ],
+   "sem": [
+    "halsizlik",
+    "kramp"
+   ],
+   "not": "NASA fitness ve kemik sayfaları (bağlam)"
+  },
+  "yuksek": {
+   "durum": "Böbrek fonksiyonunda azalma, sıvı eksikliği, yoğun egzersiz",
+   "oneri": [
+    "Sıvı alımını artırın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Yan ağrısı",
+    "İdrar değişikliği",
+    "Şişlik"
+   ],
+   "sem": [
+    "yan",
+    "idrar",
+    "sislik",
+    "halsizlik"
+   ],
+   "not": "NASA Gravity Fields sayfası"
+  }
+ },
+ "egfr_non_african_american": {
+  "ad": "eGFR",
+  "br": "mL/dk/1.73m²",
+  "ref": [
+   60,
+   null
+  ],
+  "dusuk": {
+   "durum": "Böbrek fonksiyonunda azalma",
+   "oneri": [
+    "Sıvı alımını artırın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Yan ağrısı",
+    "İdrar değişikliği"
+   ],
+   "sem": [
+    "yan",
+    "halsizlik"
+   ]
+  },
+  "yuksek": null
+ },
+ "albumin": {
+  "ad": "Albümin",
+  "br": "g/dL",
+  "ref": [
+   3.6,
+   5.1
+  ],
+  "dusuk": {
+   "durum": "Yetersiz beslenme, karaciğer, protein kaybı",
+   "oneri": [
+    "Öğünleri atlamayın",
+    "Menüde protein kaynaklarını dengeli tutun"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Şişlik",
+    "Kilo kaybı"
+   ],
+   "sem": [
+    "halsizlik",
+    "sislik"
+   ]
+  },
+  "yuksek": {
+   "durum": "Sıvı eksikliği",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "Sodyumu azaltın"
+   ],
+   "kat": "K1",
+   "hekime": [
+    "Şişlik",
+    "Nefes darlığı",
+    "Bayılma"
+   ],
+   "sem": [
+    "susama",
+    "halsizlik"
+   ],
+   "not": "NASA beslenme ve Gravity Fields sayfaları"
+  }
+ },
+ "total_protein": {
+  "ad": "Total protein",
+  "br": "g/dL",
+  "ref": [
+   6.1,
+   8.1
+  ],
+  "dusuk": {
+   "durum": "Beslenme, karaciğer/böbrek protein kaybı",
+   "oneri": [
+    "Öğünleri atlamayın",
+    "Menüde protein kaynaklarını dengeli tutun"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Şişlik",
+    "Kilo kaybı"
+   ],
+   "sem": [
+    "halsizlik",
+    "sislik"
+   ]
+  },
+  "yuksek": {
+   "durum": "İltihap, sıvı eksikliği",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Ateş",
+    "Uzun süren halsizlik"
+   ],
+   "sem": [
+    "ates",
+    "halsizlik"
+   ]
+  }
+ },
+ "globulin": {
+  "ad": "Globulin",
+  "br": "g/dL",
+  "ref": [
+   1.9,
+   3.7
+  ],
+  "dusuk": {
+   "durum": "Bağışıklık proteinlerinde azalma (nadir, hekime not)",
+   "oneri": [],
+   "kat": null,
+   "hekime": [],
+   "sem": []
+  },
+  "yuksek": {
+   "durum": "İltihap/enfeksiyon, bağışıklık aktivasyonu",
+   "oneri": [
+    "Sıvı alımını artırın",
+    "48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K2",
+   "hekime": [
+    "Ateş",
+    "Uzun süren halsizlik"
+   ],
+   "sem": [
+    "ates",
+    "halsizlik"
+   ]
+  }
+ },
+ "alt": {
+  "ad": "ALT",
+  "br": "U/L",
+  "ref": [
+   9,
+   46
+  ],
+  "dusuk": {
+   "durum": "Klinik önemi düşük",
+   "oneri": [],
+   "kat": null,
+   "hekime": [],
+   "sem": []
+  },
+  "yuksek": {
+   "durum": "Karaciğer yükü",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Ağrı artarsa",
+    "Sarılık veya koyu idrar",
+    "Ateş"
+   ],
+   "sem": [
+    "bulanti",
+    "karin",
+    "sarilik"
+   ],
+   "not": "NASA risk sayfası bulunamadı"
+  }
+ },
+ "ast": {
+  "ad": "AST",
+  "br": "U/L",
+  "ref": [
+   10,
+   40
+  ],
+  "refK": [
+   10,
+   35
+  ],
+  "dusuk": {
+   "durum": "Klinik önemi düşük",
+   "oneri": [],
+   "kat": null,
+   "hekime": [],
+   "sem": []
+  },
+  "yuksek": {
+   "durum": "Karaciğer yükü veya kas yorgunluğu/hasarı",
+   "oneri": [
+    "Kas yorgunluğu düşünülüyorsa: dinlenin, programlı egzersize kademeli dönün, 48 saat sonra yeniden ölçün"
+   ],
+   "kat": "K3 (karaciğer) / K2 (kas)",
+   "hekime": [
+    "Çay renkli idrar",
+    "Şiddetli kas ağrısı",
+    "Ağrı artarsa, sarılık"
+   ],
+   "sem": [
+    "bulanti",
+    "karin",
+    "kramp",
+    "halsizlik"
+   ]
+  }
+ },
+ "alkaline_phosphatase": {
+  "ad": "ALP",
+  "br": "U/L",
+  "ref": [
+   36,
+   130
+  ],
+  "dusuk": {
+   "durum": "Genelde önemsiz (beslenme)",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Şikayet varsa uçuş hekimine not edin"
+   ],
+   "sem": [
+    "halsizlik"
+   ]
+  },
+  "yuksek": {
+   "durum": "Karaciğer/safra yolu, kemik döngüsü",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Sürekli kemik ağrısı",
+    "Karın üstü ağrı",
+    "Sarılık"
+   ],
+   "sem": [
+    "karin",
+    "kemik",
+    "sarilik"
+   ],
+   "not": "NASA kemik sayfası (bağlam)"
+  }
+ },
+ "total_bilirubin": {
+  "ad": "Total bilirubin",
+  "br": "mg/dL",
+  "ref": [
+   0.2,
+   1.2
+  ],
+  "dusuk": {
+   "durum": "Klinik önemi düşük",
+   "oneri": [],
+   "kat": null,
+   "hekime": [],
+   "sem": []
+  },
+  "yuksek": {
+   "durum": "Karaciğer/safra yolu veya alyuvar yıkımı",
+   "oneri": [],
+   "kat": "K3",
+   "hekime": [
+    "Sarılık veya koyu idrar",
+    "Halsizlik artarsa"
+   ],
+   "sem": [
+    "sarilik",
+    "halsizlik"
+   ],
+   "not": "Hemoglobin düşük + bilirubin yüksek birlikteliği alyuvar yıkımını düşündürür"
+  }
+ }
+}

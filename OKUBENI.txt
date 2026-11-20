@@ -1,0 +1,50 @@
+Nasa Space 14-15 Kasım — proje arşivi (güncelleme: 20.11.2026)
+NASA Space Apps Challenge 2026, Konya — Takım: Steppe to Stars
+
+uygulama/
+  Baglantisiz_Saglik_Kokpiti_v5.html                 ÇALIŞAN UYGULAMA (son sürüm) — tarayıcıda açın; internet gerekmez
+                                                     Astronot sayfası + Dünyaya rapor dahil; takımın 3D figürü ve yeniden çizilmiş 14 bölge
+                                                     (NASA verisi, gösterge tablosu ve fontlar dosyanın içinde)
+
+ekran_goruntuleri/                                   Son sürümün ekranları (genel bakış ön/arka, kan değerleri, astronot sayfası, bölge haritası)
+
+dokumanlar/
+  Baglantisiz_Saglik_Kokpiti_Proje_Dokumani.pdf      ANA DOKÜMAN — kararlar kesin (14.11 16:21 sürümü)
+  Baglantisiz_Saglik_Kokpiti_Yalnizca_NASA_verisiyle.pdf  "Yalnızca NASA verisi" kuralı ve kaynak listesi (14.11)
+  saglik-kokpiti-sohbet-hafizasi.md                  14–15 Kasım kararları, kurallar, uygulama, demo, riskler
+  figur-ve-bolgeler-20-kasim.md                      Figür değişikliği ve bölge sınırları (18–20 Kasım)
+  donus-kalibratoru-baglam.md                        İlk fikir (Dönüş Kalibratörü): challenge, ekip, kaynak taraması
+  eski/Astronot_Saglik_Kokpiti_PRD.pdf               İlk PRD (14.11 12:12) — geçmiş, artık geçerli değil
+
+arastirma_raporlari/                                 8 araştırma raporu (R1–R8)
+
+kaynak/                                              Uygulamanın kaynak dosyaları (uygulamayı değiştirmek için)
+  app.js                                             Uygulama kodu (veri, kurallar, arayüz)
+  style.css, sablon.html                             Stil ve HTML iskeleti
+  figur.webp, fonts/                                 Vücut figürü (takımın 3D modeli) ve 8 font dosyası (Inter, Public Sans, DM Mono; SIL OFL)
+  figur_ve_bolgeler/                                 3D model görüntüleri + figur_hazirla.py (arka plan ayıklama) + bolgeler.py (14 bölge çokgeni)
+  donustur.py                                        NASA CSV'leri → veri/inspiration4_kan.json
+  build.py                                           Parçalar → uygulama/Baglantisiz_Saglik_Kokpiti_v4.html
+
+  Yeniden derlemek için (bu klasörün kökünden):
+    python3 kaynak/donustur.py
+    python3 kaynak/build.py
+  Sonuç, mevcut uygulamayla birebir aynı dosyayı üretir (15.11.2026'da doğrulandı).
+
+veri/
+  inspiration4_kan.json                              Birleşik NASA kan verisi: 4 astronot × 21 gösterge × 7 zaman noktası
+  gosterge_tablosu.json                              Takımın yorum tablosu (CRP satırı duruyor; build sırasında atlanır)
+  bolge_belirti.json                                 14 vücut bölgesi: belirtiler, ilgili organlar ve kan göstergeleri
+  nasa_ham/
+    LSDS-7_..._CBC_TRANSFORMED.csv                   OSD-569 tam kan sayımı — uygulamada kullanılıyor
+    LSDS-8_..._CMP_TRANSFORMED.csv                   OSD-575 kan paneli — uygulamada kullanılıyor
+    ek_paneller/
+      ..._cardiovascular_EvePanel_...csv             CRP'nin kaynağı. CRP çıkarıldı (15.11); kararın kanıtı olarak saklandı
+      ..._immune_EvePanel_...csv                     Sitokin paneli — uygulamada kullanılmıyor
+  nasa_metadata/OSD-569..., OSD-575...               NASA açıklama dosyaları (numune listesi, test yöntemi; atıf için)
+
+Not: kaynak/ klasöründeki dosyalar 15.11'de çalışan uygulamanın içinden geri çıkarıldı. İlk sürümde kod
+iki dosyaydı (app_top.js + v4/ui.js); burada tek dosya (app.js). donustur.py ve build.py yeniden yazıldı;
+ikisi birlikte aynı uygulamayı üretiyor.
+
+Not (20.11): kaynak/ kodu 15.11 08:49 sürümüdür (Astronot sayfası yok); build.py ile derlenen dosya v5 değildir. Güncel uygulama uygulama/ altındaki v5'tir.

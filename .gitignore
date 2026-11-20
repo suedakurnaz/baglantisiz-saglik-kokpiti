@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Projenin kendisinin arşiv kopyaları (içerik zaten repoda)
+Baglantisiz_Saglik_Kokpiti_v*.zip
+sunum/*.pptx.zip

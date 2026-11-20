@@ -1,0 +1,557 @@
+[
+ {
+  "n": 1,
+  "bolge": "Baş",
+  "organ": [
+   "Beyin",
+   "Göz",
+   "Kulak"
+  ],
+  "belirtiler": [
+   {
+    "kod": "basagri",
+    "ad": "Baş ağrısı"
+   },
+   {
+    "kod": "bas",
+    "ad": "Baş dönmesi"
+   },
+   {
+    "kod": "bayilma",
+    "ad": "Bayılma"
+   },
+   {
+    "kod": "bulanti",
+    "ad": "Bulantı / kusma"
+   },
+   {
+    "kod": "ates",
+    "ad": "Ateş"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "hemoglobin",
+   "hematocrit",
+   "red_blood_cell_count",
+   "glucose",
+   "sodium",
+   "potassium"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 2,
+  "bolge": "Boyun",
+  "organ": [
+   "Tiroid",
+   "Boğaz"
+  ],
+  "belirtiler": [
+   {
+    "kod": "oksuruk",
+    "ad": "Öksürük"
+   },
+   {
+    "kod": "ates",
+    "ad": "Ateş"
+   },
+   {
+    "kod": "sislik",
+    "ad": "Şişlik"
+   },
+   {
+    "kod": "nefes",
+    "ad": "Nefes darlığı"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "white_blood_cell_count"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 3,
+  "bolge": "Göğüs sol",
+  "organ": [
+   "Kalp"
+  ],
+  "belirtiler": [
+   {
+    "kod": "carp",
+    "ad": "Çarpıntı"
+   },
+   {
+    "kod": "nefes",
+    "ad": "Nefes darlığı"
+   },
+   {
+    "kod": "yayilan",
+    "ad": "Ağrı kola/çeneye yayılıyor"
+   },
+   {
+    "kod": "terleme",
+    "ad": "Titreme / terleme"
+   },
+   {
+    "kod": "bayilma",
+    "ad": "Bayılma"
+   },
+   {
+    "kod": "bas",
+    "ad": "Baş dönmesi"
+   },
+   {
+    "kod": "bulanti",
+    "ad": "Bulantı / kusma"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "potassium",
+   "sodium",
+   "calcium",
+   "hemoglobin",
+   "hematocrit"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 4,
+  "bolge": "Göğüs sağ",
+  "organ": [
+   "Akciğer"
+  ],
+  "belirtiler": [
+   {
+    "kod": "oksuruk",
+    "ad": "Öksürük"
+   },
+   {
+    "kod": "nefes",
+    "ad": "Nefes darlığı"
+   },
+   {
+    "kod": "ates",
+    "ad": "Ateş"
+   },
+   {
+    "kod": "terleme",
+    "ad": "Titreme / terleme"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "white_blood_cell_count",
+   "carbon_dioxide",
+   "hemoglobin"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 5,
+  "bolge": "Karın üst",
+  "organ": [
+   "Mide",
+   "Karaciğer",
+   "Pankreas"
+  ],
+  "belirtiler": [
+   {
+    "kod": "karin",
+    "ad": "Karın ağrısı"
+   },
+   {
+    "kod": "bulanti",
+    "ad": "Bulantı / kusma"
+   },
+   {
+    "kod": "sarilik",
+    "ad": "Sarılık / koyu idrar"
+   },
+   {
+    "kod": "ates",
+    "ad": "Ateş"
+   },
+   {
+    "kod": "susama",
+    "ad": "Susama"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "alt",
+   "ast",
+   "alkaline_phosphatase",
+   "total_bilirubin",
+   "albumin",
+   "total_protein",
+   "globulin",
+   "glucose"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 6,
+  "bolge": "Karın alt",
+  "organ": [
+   "Bağırsak",
+   "Böbrek",
+   "Mesane"
+  ],
+  "belirtiler": [
+   {
+    "kod": "karin",
+    "ad": "Karın ağrısı"
+   },
+   {
+    "kod": "bulanti",
+    "ad": "Bulantı / kusma"
+   },
+   {
+    "kod": "idrar",
+    "ad": "İdrar değişikliği / azalması"
+   },
+   {
+    "kod": "ates",
+    "ad": "Ateş"
+   },
+   {
+    "kod": "susama",
+    "ad": "Susama"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "creatinine",
+   "egfr_non_african_american",
+   "urea_nitrogen_bun",
+   "calcium",
+   "chloride",
+   "carbon_dioxide"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 7,
+  "bolge": "Sol kol",
+  "organ": [
+   "Kas",
+   "Kemik",
+   "Sinir"
+  ],
+  "belirtiler": [
+   {
+    "kod": "kramp",
+    "ad": "Kramp / uyuşma"
+   },
+   {
+    "kod": "kemik",
+    "ad": "Kemik ağrısı"
+   },
+   {
+    "kod": "sislik",
+    "ad": "Şişlik"
+   },
+   {
+    "kod": "morarma",
+    "ad": "Morarma / kanama"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "potassium",
+   "calcium",
+   "sodium",
+   "platelet_count"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 8,
+  "bolge": "Sağ kol",
+  "organ": [
+   "Kas",
+   "Kemik",
+   "Sinir"
+  ],
+  "belirtiler": [
+   {
+    "kod": "kramp",
+    "ad": "Kramp / uyuşma"
+   },
+   {
+    "kod": "kemik",
+    "ad": "Kemik ağrısı"
+   },
+   {
+    "kod": "sislik",
+    "ad": "Şişlik"
+   },
+   {
+    "kod": "morarma",
+    "ad": "Morarma / kanama"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "potassium",
+   "calcium",
+   "sodium",
+   "platelet_count"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 9,
+  "bolge": "Sol bacak",
+  "organ": [
+   "Kas",
+   "Kemik",
+   "Damar"
+  ],
+  "belirtiler": [
+   {
+    "kod": "kramp",
+    "ad": "Kramp / uyuşma"
+   },
+   {
+    "kod": "kemik",
+    "ad": "Kemik ağrısı"
+   },
+   {
+    "kod": "sislik",
+    "ad": "Şişlik"
+   },
+   {
+    "kod": "morarma",
+    "ad": "Morarma / kanama"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "potassium",
+   "calcium",
+   "sodium",
+   "hemoglobin",
+   "hematocrit",
+   "platelet_count"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 10,
+  "bolge": "Sağ bacak",
+  "organ": [
+   "Kas",
+   "Kemik",
+   "Damar"
+  ],
+  "belirtiler": [
+   {
+    "kod": "kramp",
+    "ad": "Kramp / uyuşma"
+   },
+   {
+    "kod": "kemik",
+    "ad": "Kemik ağrısı"
+   },
+   {
+    "kod": "sislik",
+    "ad": "Şişlik"
+   },
+   {
+    "kod": "morarma",
+    "ad": "Morarma / kanama"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "potassium",
+   "calcium",
+   "sodium",
+   "hemoglobin",
+   "hematocrit",
+   "platelet_count"
+  ],
+  "on_arka": "on"
+ },
+ {
+  "n": 11,
+  "bolge": "Sırt üst",
+  "organ": [
+   "Omurga",
+   "Kürek kasları"
+  ],
+  "belirtiler": [
+   {
+    "kod": "kemik",
+    "ad": "Kemik ağrısı"
+   },
+   {
+    "kod": "kramp",
+    "ad": "Kramp / uyuşma"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "calcium",
+   "alkaline_phosphatase"
+  ],
+  "on_arka": "b"
+ },
+ {
+  "n": 12,
+  "bolge": "Sol böbrek",
+  "organ": [
+   "Sol böbrek"
+  ],
+  "belirtiler": [
+   {
+    "kod": "yan",
+    "ad": "Yan ağrısı"
+   },
+   {
+    "kod": "idrar",
+    "ad": "İdrar değişikliği / azalması"
+   },
+   {
+    "kod": "ates",
+    "ad": "Ateş"
+   },
+   {
+    "kod": "bulanti",
+    "ad": "Bulantı / kusma"
+   },
+   {
+    "kod": "susama",
+    "ad": "Susama"
+   },
+   {
+    "kod": "sislik",
+    "ad": "Şişlik"
+   }
+  ],
+  "kan_gostergeleri": [
+   "creatinine",
+   "egfr_non_african_american",
+   "urea_nitrogen_bun",
+   "calcium",
+   "potassium",
+   "sodium",
+   "chloride",
+   "carbon_dioxide"
+  ],
+  "on_arka": "b"
+ },
+ {
+  "n": 13,
+  "bolge": "Sağ böbrek",
+  "organ": [
+   "Sağ böbrek"
+  ],
+  "belirtiler": [
+   {
+    "kod": "yan",
+    "ad": "Yan ağrısı"
+   },
+   {
+    "kod": "idrar",
+    "ad": "İdrar değişikliği / azalması"
+   },
+   {
+    "kod": "ates",
+    "ad": "Ateş"
+   },
+   {
+    "kod": "bulanti",
+    "ad": "Bulantı / kusma"
+   },
+   {
+    "kod": "susama",
+    "ad": "Susama"
+   },
+   {
+    "kod": "sislik",
+    "ad": "Şişlik"
+   }
+  ],
+  "kan_gostergeleri": [
+   "creatinine",
+   "egfr_non_african_american",
+   "urea_nitrogen_bun",
+   "calcium",
+   "potassium",
+   "sodium",
+   "chloride",
+   "carbon_dioxide"
+  ],
+  "on_arka": "b"
+ },
+ {
+  "n": 14,
+  "bolge": "Bel / omurga alt",
+  "organ": [
+   "Omurga",
+   "Bel kasları"
+  ],
+  "belirtiler": [
+   {
+    "kod": "kemik",
+    "ad": "Kemik ağrısı"
+   },
+   {
+    "kod": "kramp",
+    "ad": "Kramp / uyuşma"
+   },
+   {
+    "kod": "yan",
+    "ad": "Yan ağrısı"
+   },
+   {
+    "kod": "halsizlik",
+    "ad": "Halsizlik / yorgunluk"
+   }
+  ],
+  "kan_gostergeleri": [
+   "calcium",
+   "alkaline_phosphatase",
+   "creatinine"
+  ],
+  "on_arka": "b"
+ }
+]

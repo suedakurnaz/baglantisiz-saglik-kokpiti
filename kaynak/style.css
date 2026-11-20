@@ -1,0 +1,309 @@
+
+/* Yazı tipleri (NASA Horizon Design System), çevrimdışı gömülü, SIL Open Font License 1.1 (scripts.sil.org/OFL):
+   Inter: Copyright 2016 The Inter Project Authors (github.com/rsms/inter)
+   Public Sans: Copyright 2015 The Public Sans Project Authors (github.com/uswds/public-sans)
+   DM Mono: Copyright 2020 The DM Mono Project Authors (github.com/googlefonts/dm-mono) */
+@font-face{font-family:'Inter';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/inter-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Public Sans';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/public-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Public Sans';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/public-sans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'DM Mono';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/dm-mono-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'DM Mono';font-style:normal;font-display:swap;font-weight:400;src:url(fonts/dm-mono-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'DM Mono';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/dm-mono-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'DM Mono';font-style:normal;font-display:swap;font-weight:500;src:url(fonts/dm-mono-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{--nasa-blue:#0032A0;--nasa-red:#E4002B;--nasa-silver:#A2A4A3;--navy:#0B1A3F;--bg:#eef1f6;--panel:#ffffff;--tx:#0B1A3F;--mu:#5d6b82;--bd:#e2e7ef;--ac:#0032A0;--ac2:#0032A0;--acs:#e7edf9;--ok:#1f9d6b;--bad:#E4002B;--wr:#e59a1b;--sh:0 8px 28px rgba(31,62,104,.08);--r:18px;color-scheme:light}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{font:14px/1.45 "Public Sans","Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--tx);background:radial-gradient(1200px 600px at 85% -10%,#dfe6f5 0,transparent 60%),radial-gradient(900px 500px at -10% 110%,#e9ecf2 0,transparent 55%),var(--bg);height:100dvh;overflow:hidden}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:1px solid var(--bd);background:#fff;border-radius:10px;padding:6px 12px}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.mu{color:var(--mu)}.small{font-size:12.5px}
+.hidden{display:none!important}
+
+/* Kabuk */
+.shell{display:grid;grid-template-columns:220px 1fr;height:100dvh;padding:14px;gap:14px}
+.side{background:linear-gradient(180deg,#0B1A3F 0%,#0032A0 100%);color:#fff;border-radius:24px;padding:22px 16px;display:flex;flex-direction:column;gap:18px;min-height:0}
+.brand{font-weight:800;font-size:18px;line-height:1.15;letter-spacing:-.01em}
+.brand small{display:block;font-weight:500;font-size:12px;opacity:.85;margin-top:4px}
+.nav{display:flex;flex-direction:column;gap:4px}
+.nav button{display:flex;gap:10px;align-items:center;background:transparent;border:none;color:#fff;text-align:left;padding:9px 10px;border-radius:12px;font-weight:600;opacity:.9}
+.nav button.on,.nav button:hover{background:rgba(255,255,255,.18);opacity:1}
+.nav svg{width:18px;height:18px;flex:none}
+.demo{background:rgba(255,255,255,.14);border-radius:14px;padding:10px;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.demo b{grid-column:1/-1;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+.demo button{background:rgba(255,255,255,.95);color:var(--nasa-blue);border:none;font-weight:700;font-size:12.5px;padding:6px 4px;border-radius:9px}
+.demo .msg{grid-column:1/-1;font-size:11.5px;opacity:.95;min-height:16px}
+.disc{margin-top:auto;font-size:11.5px;line-height:1.45;opacity:.92}
+.disc b{display:block;font-size:12.5px;margin-bottom:4px}
+
+.main{display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:12px;min-height:0;min-width:0}
+.top{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.top h1{font-size:22px;margin:0;letter-spacing:-.02em}
+.top .sub{font-size:12.5px;color:var(--mu)}
+.top .sp{flex:1}
+.crew{display:flex;gap:6px;background:#fff;border-radius:14px;padding:4px;box-shadow:var(--sh)}
+.crew button{border:none;border-radius:10px;padding:6px 12px;font-weight:700;display:flex;gap:6px;align-items:center;background:transparent}
+.crew button.on{background:var(--ac);color:#fff}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--ok)}
+.dot.y{background:var(--wr)}.dot.r{background:var(--bad)}.dot.g{background:var(--ok)}.dot.n{background:#c3ccd8}
+.clock{display:flex;gap:6px;align-items:center;background:#fff;border-radius:14px;padding:4px 6px 4px 12px;box-shadow:var(--sh);font-size:12.5px;color:var(--mu)}
+.clock input{border:none;background:transparent;font-weight:600;color:var(--tx);width:auto}
+.clock button{border:none;background:var(--acs);color:var(--ac2);font-weight:700;padding:5px 10px}
+.bell{position:relative;width:40px;height:40px;border-radius:12px;border:none;background:#fff;box-shadow:var(--sh);display:grid;place-items:center;padding:0}
+.bell svg{width:20px;height:20px}
+.bell i{position:absolute;top:6px;right:7px;min-width:16px;height:16px;border-radius:8px;background:var(--bad);color:#fff;font:700 10.5px/16px system-ui;font-style:normal;padding:0 4px}
+.bell i:empty{display:none}
+
+.grid{display:grid;grid-template-columns:minmax(280px,330px) minmax(0,1fr) minmax(300px,350px);gap:14px;min-height:0}
+.col{display:flex;flex-direction:column;gap:14px;min-height:0}
+.card{background:var(--panel);border-radius:var(--r);box-shadow:var(--sh);padding:16px 18px;min-height:0}
+.card h3{margin:0 0 10px;font-size:15.5px;letter-spacing:-.01em;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card h3 .lnk{font-size:12.5px;font-weight:600;color:var(--ac2);background:none;border:none;padding:0}
+.scroll{overflow:auto}
+
+/* Astronot kartı */
+.who{display:flex;gap:14px;align-items:center}
+.av{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,#e7edf9,#dfe3ea);display:grid;place-items:center;font-weight:800;color:var(--ac2);font-size:16px;flex:none}
+.who .nm{font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.who .ds{font-size:12.5px;color:var(--mu);margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chip{background:#f3f6fa;border-radius:20px;padding:5px 11px;font-size:12.5px;font-weight:600}
+.chip b{font-size:14px}
+.chip.r{background:#fdecec;color:#b42328}.chip.y{background:#fdf3e1;color:#9a6100}
+
+/* Gösterge grafiği */
+.lab{display:flex;flex-direction:column;flex:1}
+.mtabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--bd);margin:0 -4px 6px;padding:0 4px}
+.mtabs button{border:none;background:none;padding:6px 8px 8px;font-size:12.5px;color:var(--mu);white-space:nowrap;border-bottom:2px solid transparent;border-radius:0;display:flex;gap:5px;align-items:center}
+.mtabs button.on{color:var(--ac2);border-bottom-color:var(--ac);font-weight:700}
+.chart{flex:1;min-height:150px;position:relative}
+.chart svg{width:100%;height:100%;display:block;overflow:visible}
+.ent{display:grid;grid-template-columns:auto 1fr auto;gap:8px 10px;align-items:center;margin-top:8px;padding-top:10px;border-top:1px solid var(--bd)}
+.ent .big{font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.ent .big small{font-size:12px;font-weight:600;color:var(--mu);margin-left:3px}
+.ent input{width:84px;padding:6px 8px;border:1px solid var(--bd);border-radius:10px;text-align:right;font-weight:600}
+.ent input.el{border:2px solid var(--wr)}
+.pill{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700;color:#fff;background:var(--ok)}
+.pill.r{background:var(--bad)}.pill.y{background:var(--wr)}.pill.n{background:#c3ccd8;color:var(--tx)}
+
+/* Figür */
+.body{position:relative;display:flex;flex-direction:column;border-radius:24px;background:radial-gradient(60% 55% at 50% 45%,#ffffff 0,#f3f7fc 55%,transparent 75%);min-height:0}
+.body .hd{display:flex;justify-content:space-between;align-items:baseline;padding:2px 6px 0}
+.body .hd b{font-size:15.5px}
+.fig{flex:1;min-height:0}
+.fig svg{width:100%;height:100%;display:block}
+.fig image{filter:grayscale(1) brightness(1.8) contrast(.64) sepia(.15) hue-rotate(178deg) saturate(1.6)}
+.hz rect,.hz ellipse,.hz polygon{fill:rgba(0,50,160,0);stroke:none;cursor:pointer;transition:fill .15s}
+.hz:hover rect,.hz:hover ellipse,.hz:hover polygon{fill:rgba(0,50,160,.18)}
+.hz.on rect,.hz.on ellipse,.hz.on polygon{fill:rgba(0,50,160,.32);stroke:#0032A0;stroke-width:5}
+.hz.y rect,.hz.y ellipse,.hz.y polygon{fill:rgba(229,154,27,.26)}
+.hz.r rect,.hz.r ellipse,.hz.r polygon{fill:rgba(229,72,77,.28)}
+.hz>circle:not(.hm){r:15px;fill:#fff;fill-opacity:1;stroke:#9fb0c4;stroke-width:5}
+.hz.on>circle:not(.hm){stroke:#0032A0;fill:#0032A0}
+.hz>text{font-size:0}
+.hz .hm{r:17px;fill:var(--bad);stroke:#fff;stroke-width:6}
+.tip{position:absolute;pointer-events:none;background:#14233a;color:#fff;font-size:12px;font-weight:600;padding:4px 9px;border-radius:8px;transform:translate(-50%,-130%);white-space:nowrap}
+.selbar{display:flex;justify-content:center;gap:8px;align-items:center;padding:6px 0 2px;font-size:13px;min-height:30px}
+.selbar b{font-size:14px}
+
+/* Şikayet kartı */
+.region{background:var(--acs);border-radius:12px;padding:8px 12px;font-size:13px}
+.region b{font-size:14px;color:var(--ac2)}
+.lbl{font-size:12px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.05em;margin:12px 0 6px;display:flex;justify-content:space-between}
+.sev{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
+.sev button{padding:5px 0;border:none;background:#f1f5f9;border-radius:7px;font-weight:700;font-size:12.5px}
+.sev button.on{color:#fff}
+.pills{display:flex;flex-wrap:wrap;gap:5px}
+.pills label{cursor:pointer}
+.pills input{position:absolute;opacity:0;pointer-events:none}
+.pills span{display:inline-block;border-radius:16px;padding:4px 10px;font-size:12.5px;background:#f1f5f9}
+.pills input:checked+span{background:var(--ac);color:#fff}
+.pills input:focus-visible+span{outline:2px solid var(--ac)}
+.row2{display:flex;gap:8px;margin-top:10px}
+.row2 input{flex:1;min-width:0;border:1px solid var(--bd);border-radius:10px;padding:7px 10px;background:#f8fafc}
+.pri{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:700}
+.msg{font-size:12px;color:var(--mu);margin-top:6px;min-height:16px}
+
+/* Sonuç kartı */
+.res .hl{font-weight:700;font-size:14px}
+.res ul{margin:6px 0;padding-left:18px}
+.res li{margin:2px 0}
+.badge{display:inline-flex;gap:6px;align-items:center;font-size:12px;font-weight:700;padding:3px 9px;border-radius:20px;background:#f1f5f9}
+.badge.r{background:#fdecec;color:#b42328}.badge.y{background:#fdf3e1;color:#9a6100}.badge.g{background:#e6f6ef;color:#167a52}
+.alert{background:#fdecec;color:#9f1d22;border-radius:12px;padding:8px 10px;font-weight:600;font-size:13px}
+
+/* Mürettebat kartı */
+.mr{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:6px 6px;border-radius:12px;cursor:pointer;border:none;background:none;width:100%;text-align:left}
+.mr:hover,.mr.on{background:#f3f6fa}
+.mr .av{width:34px;height:34px;border-radius:11px;font-size:12px}
+.mr small{display:block;color:var(--mu);font-size:11.5px}
+.crewalert{border-radius:12px;padding:8px 10px;font-size:12.5px;font-weight:600;margin-bottom:6px}
+.crewalert.r{background:#fdecec;color:#9f1d22}.crewalert.y{background:#fdf3e1;color:#8a5600}
+.crewalert details summary{cursor:pointer}
+
+/* Zaman çizelgesi */
+.tl{background:#fff;border-radius:22px;box-shadow:var(--sh);padding:10px 16px 8px;display:flex;align-items:stretch;gap:0;overflow-x:auto}
+.tl .ev{flex:1 0 64px;display:flex;flex-direction:column;align-items:center;gap:3px;position:relative;border:none;background:none;padding:2px 0;border-radius:12px}
+.tl .ev:hover{background:#f6f9fc}
+.tl .ev .c{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:12px;background:#f1f5f9;color:var(--mu);position:relative;z-index:1}
+.tl .ev .c svg{width:18px;height:18px}
+.tl .ev.on .c{outline:3px solid var(--ac);outline-offset:2px}
+.tl .ev .c.r{background:#fde3e4;color:#c22c32}.tl .ev .c.y{background:#fdeed2;color:#a86a00}.tl .ev .c.g{background:#e3f5ee;color:#167a52}.tl .ev .c.k{background:#e7f0fe;color:#2f64c7}.tl .ev .c.p{background:var(--ac);color:#fff}
+.tl .ev .t{font-size:11.5px;font-weight:700}
+.tl .ev .d{font-size:10.5px;color:var(--mu);white-space:nowrap}
+.tl .ev::before{content:"";position:absolute;top:20px;left:0;right:0;height:2px;background:#e8eef5}
+.tl .ev:first-child::before{left:50%}.tl .ev:last-child::before{right:50%}
+.tl .ev.fl::before{background:linear-gradient(90deg,#cfeee9,#cfeee9)}
+.tl .now .c{background:#14233a;color:#fff;width:28px;height:28px;margin-top:4px}
+
+/* Çekmece */
+.drawer{position:fixed;inset:14px 14px 14px auto;width:min(620px,92vw);background:#fff;border-radius:22px;box-shadow:0 20px 60px rgba(20,35,58,.25);display:flex;flex-direction:column;z-index:20;transform:translateX(110%);transition:transform .25s}
+.drawer.open{transform:none}
+.drawer .dh{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid var(--bd)}
+.drawer .dh h2{margin:0;font-size:18px}
+.drawer .db{flex:1;overflow:auto;padding:14px 20px}
+.scrim{position:fixed;inset:0;background:rgba(20,35,58,.18);z-index:19}
+.grp{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--mu);margin:14px 0 4px}
+.lr{display:grid;grid-template-columns:minmax(120px,1.2fr) 90px minmax(90px,1fr) 120px;gap:10px;align-items:center;padding:5px 0;border-bottom:1px solid #f1f4f8}
+.lr label small{display:block;font-size:11.5px;color:var(--mu)}
+.lr input{width:100%;padding:5px 8px;border:1px solid var(--bd);border-radius:9px;text-align:right}
+.lr input.el{border:2px solid var(--wr)}
+.lr .st{text-align:right;font-size:11.5px;color:var(--mu)}
+.bar{position:relative;height:8px;border-radius:4px;background:#edf1f6}
+.bar .band{position:absolute;top:0;bottom:0;background:#bfe9df;border-radius:4px}
+.bar .pt{position:absolute;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.rep{border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin-bottom:10px}
+.rep h4{margin:0 0 4px;font-size:15px}
+.hy{border-left:4px solid var(--wr);background:#fbfaf6;padding:8px 10px;border-radius:0 10px 10px 0;margin:8px 0;font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:5px 4px;border-bottom:1px solid #f1f4f8;text-align:left}
+
+@media(max-width:1180px){.grid{grid-template-columns:minmax(260px,300px) minmax(0,1fr) minmax(280px,310px)}.shell{grid-template-columns:180px 1fr}}
+@media(max-width:980px){body{overflow:auto;height:auto}.shell{grid-template-columns:1fr;height:auto}.grid{grid-template-columns:1fr}.body{height:70vh}}
+
+.col.right{overflow:hidden}
+.col.right .sik{flex:none}
+.col.right .res{flex:1 1 auto;overflow:auto;min-height:120px}
+#crewAlert:empty{display:none}
+#crewAlert .crewalert{margin:0;box-shadow:var(--sh)}
+.demo .msg{color:#fff;margin:0}
+.lab{min-height:0}
+
+.yon{display:flex;background:#fff;border-radius:12px;padding:3px;box-shadow:var(--sh)}
+.yon button{border:none;background:none;padding:5px 14px;border-radius:9px;font-weight:700;font-size:13px;color:var(--mu);position:relative}
+.yon button.on{background:var(--ac);color:#fff}
+.yon button i{position:absolute;top:-4px;right:-4px;min-width:16px;height:16px;border-radius:8px;background:var(--bad);color:#fff;font:700 10px/16px system-ui;font-style:normal;padding:0 4px}
+.rot{position:absolute;right:14px;bottom:44px;width:40px;height:40px;border-radius:50%;border:none;background:#fff;box-shadow:var(--sh);display:grid;place-items:center;padding:0;color:var(--ac2)}
+.rot svg{width:20px;height:20px}
+.body .hd{align-items:center}
+
+.fig{display:flex;justify-content:center;align-items:stretch}
+.fig svg{height:100%!important;width:auto!important;max-width:100%!important;aspect-ratio:708/1446;flex:none}
+.col.right{overflow:auto}
+@media(max-width:1340px){.clock .lb,.top .sub{display:none}.top h1{font-size:19px}.crew button{padding:6px 9px}.top{gap:10px;flex-wrap:nowrap}}
+@media(max-height:800px){.shell{padding:10px;gap:10px}.main,.grid,.col{gap:10px}.card{padding:12px 14px}.who .nm{font-size:20px}.av{width:44px;height:44px}.chips{margin-top:8px}.chip{padding:3px 9px}.ent .big{font-size:22px}.tl{padding:6px 12px 4px}.tl .ev .c{width:30px;height:30px}.side{padding:16px 12px;gap:12px}.disc{font-size:10.5px}}
+
+/* bölge renkleri: kırmızı = Acil/Yüksek, sarı = Orta, yeşil = İzlem; seçili bölge rengini korur */
+.hz.g rect,.hz.g ellipse,.hz.g polygon{fill:rgba(31,157,107,.26)}
+.hz.y rect,.hz.y ellipse,.hz.y polygon{fill:rgba(229,154,27,.32)}
+.hz.r rect,.hz.r ellipse,.hz.r polygon{fill:rgba(229,72,77,.36)}
+.hz.on.g rect,.hz.on.g ellipse,.hz.on.g polygon{fill:rgba(31,157,107,.45)}
+.hz.on.y rect,.hz.on.y ellipse,.hz.on.y polygon{fill:rgba(229,154,27,.5)}
+.hz.on.r rect,.hz.on.r ellipse,.hz.on.r polygon{fill:rgba(229,72,77,.55)}
+.hz.g .hm{fill:var(--ok)}.hz.y .hm{fill:var(--wr)}.hz.r .hm{fill:var(--bad)}
+.sira{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 8px}
+.sira button{border:none;background:#f3f6fa;border-radius:16px;padding:3px 10px;font-size:12px;font-weight:600;display:flex;gap:5px;align-items:center}
+.sira button.on{background:var(--acs);color:var(--ac2)}
+.rep.r{border-left:5px solid var(--bad)}.rep.y{border-left:5px solid var(--wr)}.rep.g{border-left:5px solid var(--ok)}.rep.n{opacity:.7}
+.rep h4{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.sn{width:24px;height:24px;border-radius:50%;background:#14233a;color:#fff;display:inline-grid;place-items:center;font-size:12px}
+.tl .ev .c.n{background:#eef1f5;color:#9aa6b5}
+
+.ib{width:18px;height:18px;border-radius:50%;border:1.5px solid #9fb0c4;background:#fff;color:#5d6d82;font:700 11px/1 Georgia,serif;font-style:italic;padding:0;display:inline-grid;place-items:center;cursor:pointer;vertical-align:middle;flex:none}
+.ib:hover,.ib[aria-expanded="true"]{border-color:var(--ac);color:#fff;background:var(--ac)}
+.ib.light{border-color:rgba(255,255,255,.8);background:transparent;color:#fff}
+.ibrow{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap}
+.pop{position:fixed;z-index:50;background:#14233a;color:#eef3f8;font-size:12.5px;line-height:1.5;padding:10px 12px;border-radius:12px;box-shadow:0 12px 30px rgba(20,35,58,.3)}
+.pop b{color:#fff}
+.disc .ibrow{margin-top:4px;opacity:.95}
+
+/* bölge odak çerçevesi: tarayıcı dikdörtgeni yerine bölgenin kendi kenarı (yalnız klavyeyle) */
+.hz,.hz:focus,.fig svg:focus{outline:none}
+.hz:focus-visible rect,.hz:focus-visible ellipse,.hz:focus-visible polygon{stroke:#0032A0;stroke-width:6;stroke-dasharray:14 8}
+
+.tlh{flex:0 0 92px;display:flex;flex-direction:column;justify-content:center;gap:6px;padding-right:10px;margin-right:4px;border-right:1px solid var(--bd);font-size:12.5px;line-height:1.25}
+.tl .ev .t{white-space:nowrap}
+
+.bos{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;color:var(--mu);font-size:13px;padding:10px;border:2px dashed var(--bd);border-radius:14px}
+.bos b{color:var(--tx);font-size:14px}
+.bos.sm{height:auto;margin:6px 0 4px}
+
+.pills .more{border:1px dashed #b8c4d3;background:#fff;border-radius:16px;padding:3px 10px;font-size:12.5px;color:var(--ac2);font-weight:600}
+.pills .ek{display:contents}
+.pills .ek.hidden{display:none!important}
+
+/* NASA HDS tipografisi: başlık Inter, gövde Public Sans, rakam ve etiket DM Mono */
+h1,h2,h3,h4,.brand,.who .nm,.card h3,.drawer .dh h2,.top h1{font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif}
+.ent .big,.clock input,.tl .ev .c,.sev button,.lr input,.ent input,.sn,.cnt,.bell i,.av,.mono{font-family:"DM Mono",ui-monospace,Menlo,monospace}
+.badge,.pill,.crew button,.chip,.tl .ev .d{font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif}
+.lbl,.grp{font-family:"DM Mono",ui-monospace,Menlo,monospace;letter-spacing:.04em}
+.chart svg text{font-family:"DM Mono",ui-monospace,Menlo,monospace}
+.brand{display:flex;gap:10px;align-items:center}
+.brand .mk{width:38px;height:38px;border-radius:11px;background:#fff;display:grid;place-items:center;flex:none}
+.brand .mk svg{width:24px;height:24px}
+.brand .tx{line-height:1.15}
+.sa{font-family:"Inter",Helvetica,Arial,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.02em;border:1px solid rgba(255,255,255,.35);border-radius:10px;padding:7px 9px;line-height:1.35}
+.sa small{display:block;font-weight:400;opacity:.85}
+.insignia{background:#fff;border-radius:10px;padding:8px;display:grid;place-items:center}
+.insignia img{max-width:100%;height:auto}
+
+/* ===== v5 sadeleştirme ===== */
+.who{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.who .ds{margin:0}
+.chips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.stat{background:#f4f6fa;border-radius:12px;padding:8px 10px;display:flex;flex-direction:column;gap:1px}
+.stat b{font:700 20px/1.1 "DM Mono",ui-monospace,monospace;color:#8a97a8}
+.stat span{font-size:11.5px;color:var(--mu)}
+.stat.a b{color:var(--tx)}.stat.r{background:#fdecec}.stat.r b{color:#b42328}.stat.y{background:#fdf3e1}.stat.y b{color:#9a6100}
+.h3s{display:block;font:500 12px/1.3 "Public Sans",sans-serif;color:var(--mu);margin-top:2px}
+.card h3{align-items:flex-start}
+.mtabs{mask-image:linear-gradient(90deg,#000 82%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent)}
+.ent{display:flex;flex-direction:column;gap:8px}
+.ent .eh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ent .eh b{font-size:14px}
+.ent .ev2{display:flex;align-items:center;gap:14px}
+.ent .meta{font-size:12.5px;color:var(--mu);line-height:1.45}
+.ent .ein{display:flex;align-items:center;gap:6px}
+.ent .ein label{flex:1;font-size:12.5px;color:var(--mu)}
+.ent .ein .elt{color:#9a6100;font-weight:600}
+.ent .ein button{padding:5px 9px}
+.selbar{gap:14px;font-size:12px;color:var(--mu)}
+.selbar span{display:inline-flex;align-items:center;gap:5px}
+.sw{width:10px;height:10px;border-radius:3px;display:inline-block}
+.sw.r{background:rgba(229,72,77,.55)}.sw.y{background:rgba(229,154,27,.55)}.sw.g{background:rgba(31,157,107,.5)}
+.hz>circle:not(.hm){r:9px;stroke-width:4;opacity:.8}
+.sik .lbl,.sik .sev,.sik .pills,.sik .row2{transition:opacity .15s}
+.sik.kapali .lbl,.sik.kapali .sev,.sik.kapali .pills,.sik.kapali .row2{opacity:.38;pointer-events:none}
+.sik.kapali .region{background:#fff4d6;color:#7a5200;font-weight:600}
+.region .ibrow{gap:8px}
+.region .mu{font-size:12px}
+.res .rh{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.res .rh>b{font-size:16px}
+.tl .ev .c{width:30px;height:30px}
+.tl .ev::before{top:17px}
+.tl .ev .c svg{width:16px;height:16px}
+.tl .ev .d.r{color:#b42328;font-weight:600}
+.tl .now .c{width:22px;height:22px;margin-top:4px}
+.tlh{flex:0 0 78px}
+.ent{align-items:stretch;text-align:left}
+.ent .ev2 .big{flex:none}
+.sik.kapali .lbl,.sik.kapali .sev,.sik.kapali .pills,.sik.kapali .row2{display:none}
+.sik.kapali h3{margin-bottom:8px}
+.msel{display:flex;align-items:center;gap:8px;border:1px solid var(--bd);border-radius:10px;padding:0 10px;margin:4px 0 6px;background:#f8fafc}
+.msel select{flex:1;border:none;background:transparent;padding:7px 0;font-weight:600;font-size:13px;cursor:pointer;min-width:0}
+.msel select:focus-visible{outline:none}.msel:focus-within{outline:2px solid var(--ac);outline-offset:1px}
+.clock .canli{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:var(--ok);padding:0 4px}
+.clock .canli::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(31,157,107,.2)}
+.clock #simdiB{background:#e6f6ef;color:#167a52}
+/* Manken: yüzsüz, cinsiyetsiz dış hat */
+.mank{fill:url(#mg);stroke:#a9b6c8;stroke-width:5;stroke-linejoin:round;pointer-events:none;filter:drop-shadow(0 18px 24px rgba(31,62,104,.10))}
